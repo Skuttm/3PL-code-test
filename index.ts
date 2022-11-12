@@ -41,7 +41,7 @@ function findSumPairs(array: number[], sum: number): [number, number][] {
 
   array.forEach((i, index) => {
     for (let j = index; j < array.length; j++) {
-      if (i + j === sum) result.push([i, j]);
+      if (i + array[j] === sum) result.push([i, array[j]]);
     }
   });
 
